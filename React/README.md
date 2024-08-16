@@ -8,7 +8,7 @@ Esta é uma aplicação simples de lista de tarefas desenvolvida com React.
 
 1. ### Clone o repositório:
    ```bash
-   git clone https://github.com/fblessa/challenge.git
+   git clone git@github.com:fblessa/challenge.git
    cd challenge
    cd React
    npm install
@@ -17,7 +17,7 @@ Esta é uma aplicação simples de lista de tarefas desenvolvida com React.
 ## Com Docker
 
 1. ### Clone o repositório:
-  git clone https://github.com/fblessa/challenge.git
+  git clone git@github.com:fblessa/challenge.git
   cd challenge
   cd React
   docker build -t task-list-app .
