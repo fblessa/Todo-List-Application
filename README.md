@@ -26,7 +26,7 @@ Para clonar o repositório para a sua máquina local, siga os passos abaixo:
 1. Abra o terminal (ou Git Bash).
 2. Navegue até o diretório onde você deseja clonar o repositório.
 3. Execute o seguinte comando:
-
-   git clone https://github.com/fblessa/challenge.git
+   SSH
+   git clone git@github.com:fblessa/challenge.git
 
    Tudo que precisará está no README do projeto.
