@@ -45,11 +45,16 @@ const TaskList: React.FC = () => {
         placeholder="Add a new task"
         className="input"
       />
-      <Button onClick={addTask} className="button addTask">Add Task
+      <Button onClick={addTask} className="button addTask">
+        Add Task
       </Button> 
       <div>
-        <Button onClick={() => setFilter('all')} className="button filter">Show All</Button>
-        <Button onClick={() => setFilter('completed')} className="button filter">Show Completed</Button>
+        <Button onClick={() => setFilter('all')} className="button filter">
+          Show All
+        </Button>
+        <Button onClick={() => setFilter('completed')} className="button filter">
+          Show Completed
+        </Button>
       </div>
       <ul>
         {filteredTasks.map(task => (
@@ -58,7 +63,7 @@ const TaskList: React.FC = () => {
               {task.name}
             </span>
             <Button onClick={() => toggleTaskCompletion(task.id)} className={`button ${task.completed ? "undo" : "complete"}`}>
-              {task.completed ? 'Undo' : 'Complete'}
+              {task.completed ? 'Uncheck' : 'Complete'}
             </Button>
           </li>
         ))}
