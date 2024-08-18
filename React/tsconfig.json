@@ -3,5 +3,17 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ], 
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ESNext", // ou "ES6"
+    "target": "ESNext", // ou "ES6"
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@node/*": ["src/node/*"]
+    }
+  }
 }

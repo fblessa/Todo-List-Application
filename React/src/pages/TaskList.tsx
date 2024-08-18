@@ -44,6 +44,7 @@ const TaskList: React.FC = () => {
         onChange={(e) => setNewTaskName(e.target.value)}
         placeholder="Add a new task"
         className="input"
+        data-testid="task-input"
       />
       <Button onClick={addTask} className="button addTask">
         Add Task
